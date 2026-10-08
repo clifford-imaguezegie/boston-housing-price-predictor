@@ -1,0 +1,5 @@
+*.pyc
+__pycache__/
+.env
+.streamlit/secrets.toml
+boston.csv

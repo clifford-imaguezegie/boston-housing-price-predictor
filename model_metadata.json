@@ -1,0 +1,97 @@
+{
+  "model_name": "Boston Housing XGBoost regression (educational demo)",
+  "feature_names": [
+    "CRIM",
+    "ZN",
+    "INDUS",
+    "CHAS",
+    "NX",
+    "RM",
+    "AGE",
+    "DIS",
+    "RAD",
+    "TAX",
+    "PTRATIO",
+    "LSTAT"
+  ],
+  "feature_defaults": {
+    "CRIM": 0.26139,
+    "ZN": 0.0,
+    "INDUS": 8.56,
+    "CHAS": 0.0,
+    "NX": 0.538,
+    "RM": 6.21,
+    "AGE": 77.7,
+    "DIS": 3.17575,
+    "RAD": 5.0,
+    "TAX": 330.0,
+    "PTRATIO": 18.7,
+    "LSTAT": 10.925
+  },
+  "numeric_bounds": {
+    "CRIM": {
+      "min": 0.00906,
+      "max": 88.9762
+    },
+    "ZN": {
+      "min": 0.0,
+      "max": 100.0
+    },
+    "INDUS": {
+      "min": 0.74,
+      "max": 27.74
+    },
+    "CHAS": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "NX": {
+      "min": 0.385,
+      "max": 0.871
+    },
+    "RM": {
+      "min": 3.863,
+      "max": 8.78
+    },
+    "AGE": {
+      "min": 2.9,
+      "max": 100.0
+    },
+    "DIS": {
+      "min": 1.1296,
+      "max": 12.1265
+    },
+    "RAD": {
+      "min": 1.0,
+      "max": 24.0
+    },
+    "TAX": {
+      "min": 187.0,
+      "max": 711.0
+    },
+    "PTRATIO": {
+      "min": 12.6,
+      "max": 22.0
+    },
+    "LSTAT": {
+      "min": 1.73,
+      "max": 37.97
+    }
+  },
+  "categorical_options": {},
+  "target": "MEDV",
+  "target_units": "USD thousands (historic dataset)",
+  "metrics": {
+    "RMSE": 2.7489381782835474,
+    "MAE": 1.9267293649561266,
+    "R-squared": 0.8969552533311362,
+    "MAPE": 0.10166481785334586
+  },
+  "best_cv_params": {
+    "regressor__learning_rate": 0.1,
+    "regressor__max_depth": 3,
+    "regressor__n_estimators": 200,
+    "regressor__subsample": 0.7
+  },
+  "caveat": "Historical Boston Housing dataset. Socioeconomic variables can encode unfair proxies; predictions are educational only."
+}
